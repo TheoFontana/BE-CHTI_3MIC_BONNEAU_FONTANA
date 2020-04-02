@@ -1,4 +1,4 @@
-s;******************** (C) COPYRIGHT 2011 STMicroelectronics ********************
+;******************** (C) COPYRIGHT 2011 STMicroelectronics ********************
 ;* File Name          : startup_stm32f10x_md.s
 ;* Author             : MCD Application Team
 ;* Version            : V3.5.0

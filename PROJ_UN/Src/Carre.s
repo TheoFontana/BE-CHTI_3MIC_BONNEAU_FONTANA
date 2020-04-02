@@ -1,4 +1,14 @@
-area mon code
+area moncode
+	
+export timer_callback
+	
+proc timer_callback
+
+	
+
+	endp
+	
+	
 GPIOB_BSRR	equ	0x40010C10	; Bit Set/Reset register
 ; mise a 1 de PB1
 	ldr	r3, =GPIOB_BSRR

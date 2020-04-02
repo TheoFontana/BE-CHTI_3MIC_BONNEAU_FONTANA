@@ -11,6 +11,7 @@
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103RB</Device>
@@ -323,6 +324,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -335,7 +337,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>STM32F103xB,USE_FULL_LL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>..\GASSP72\GASSP72</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -380,14 +382,34 @@
           <GroupName>Sources</GroupName>
           <Files>
             <File>
-              <FileName>startup-rvds.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\startup-rvds.s</FilePath>
-            </File>
-            <File>
               <FileName>principal.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Src\principal.c</FilePath>
+            </File>
+            <File>
+              <FileName>Carre.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\Carre.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>gassp72.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\GASSP72\GASSP72\gassp72.lib</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Sys</GroupName>
+          <Files>
+            <File>
+              <FileName>startup-rvds.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\startup-rvds.s</FilePath>
             </File>
           </Files>
         </Group>

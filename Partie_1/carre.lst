@@ -1,0 +1,126 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 thumb
+    2 00000000         
+    3 00000000                 area             moncode, code, readonly
+    4 00000000                 export           timer_callback
+    5 00000000                 extern           drapeau
+    6 00000000         
+    7 00000000 40010C10 
+                       GPIOB_BSRR
+                               equ              0x40010C10  ; Bit Set/Reset reg
+                                                            ister
+    8 00000000         
+    9 00000000         
+   10 00000000         timer_callback
+                               proc
+   11 00000000 4809            ldr              r0, =drapeau
+   12 00000002 6802            ldr              r2, [r0]
+   13 00000004 B102            cbz              r2, mise_a_1
+   14 00000006 B93A            cbnz             r2, mise_a_0
+   15 00000008         
+   16 00000008         mise_a_1
+   17 00000008         ; mise a 1 de PB1
+   18 00000008 4B08            ldr              r3, =GPIOB_BSRR
+   19 0000000A F04F 0102       mov              r1, #0x00000002
+   20 0000000E 6019            str              r1, [r3]
+   21 00000010 F04F 0201       mov              r2, #1
+   22 00000014 6002            str              r2, [r0]
+   23 00000016 4770            bx               lr
+   24 00000018         
+   25 00000018         mise_a_0
+   26 00000018         ; mise a 0 de PB1
+   27 00000018 4B04            ldr              r3, =GPIOB_BSRR
+   28 0000001A F44F 3100       mov              r1, #0x00020000
+   29 0000001E 6019            str              r1, [r3]
+   30 00000020 F04F 0200       mov              r2, #0
+   31 00000024 6002            str              r2, [r0]
+   32 00000026 4770            bx               lr
+   33 00000028         
+   34 00000028         ; N.B. le registre BSRR est write-only, on ne peut pas l
+                       e relire
+   35 00000028                 endp
+   36 00000028                 end
+              00000000 
+              40010C10 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\obj\carre.d -o.\obj\carre.o -I.\RTE\_Simu -IC:\Keil_v5\ARM\PACK\
+ARM\CMSIS\5.3.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\De
+vice\Include --predefine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --pred
+efine="__UVISION_VERSION SETA 525" --predefine="_RTE_ SETA 1" --predefine="STM3
+2F10X_MD SETA 1" --list=carre.lst Src\Carre.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+mise_a_0 00000018
+
+Symbol: mise_a_0
+   Definitions
+      At line 25 in file Src\Carre.s
+   Uses
+      At line 14 in file Src\Carre.s
+Comment: mise_a_0 used once
+mise_a_1 00000008
+
+Symbol: mise_a_1
+   Definitions
+      At line 16 in file Src\Carre.s
+   Uses
+      At line 13 in file Src\Carre.s
+Comment: mise_a_1 used once
+moncode 00000000
+
+Symbol: moncode
+   Definitions
+      At line 3 in file Src\Carre.s
+   Uses
+      None
+Comment: moncode unused
+timer_callback 00000000
+
+Symbol: timer_callback
+   Definitions
+      At line 10 in file Src\Carre.s
+   Uses
+      At line 4 in file Src\Carre.s
+Comment: timer_callback used once
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+GPIOB_BSRR 40010C10
+
+Symbol: GPIOB_BSRR
+   Definitions
+      At line 7 in file Src\Carre.s
+   Uses
+      At line 18 in file Src\Carre.s
+      At line 27 in file Src\Carre.s
+
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+drapeau 00000000
+
+Symbol: drapeau
+   Definitions
+      At line 5 in file Src\Carre.s
+   Uses
+      At line 11 in file Src\Carre.s
+Comment: drapeau used once
+1 symbol
+343 symbols in table

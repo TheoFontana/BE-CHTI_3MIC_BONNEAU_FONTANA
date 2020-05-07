@@ -24,3 +24,8 @@ L'objectif est de vérifier la validité d'une table trigonométrique en verifia
 ### Partie 2.2
 L'obectif est le calcul du module de la DFT en s'apuyant sur les tables vérifiés en partie 2.1
 * Notre travail  se trouve dans le dossier [Partie_2.2](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/tree/master/Partie_2.2)
+
+### Partie 3
+L'objectif de cette partie est le calcul la DFT en temps réel pour identifer les différents tir laser et mettre à jour les scores.
+
+* Notre travail  se trouve dans le dossier [Partie_3](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/tree/master/Partie_3) *(Nous n'avons pas encore terminée cette partie)*

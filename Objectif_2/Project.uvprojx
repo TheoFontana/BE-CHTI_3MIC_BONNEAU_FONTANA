@@ -337,7 +337,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>STM32F103xB,USE_FULL_LL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\GASSP72\GASSP72</IncludePath>
+              <IncludePath>..\GFSSP72</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -382,34 +382,39 @@
           <GroupName>Sources</GroupName>
           <Files>
             <File>
+              <FileName>startup-rvds.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\startup-rvds.s</FilePath>
+            </File>
+            <File>
               <FileName>principal.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Src\principal.c</FilePath>
             </File>
             <File>
-              <FileName>Carre.s</FileName>
+              <FileName>Tables_signal.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Src\Carre.s</FilePath>
+              <FilePath>.\Src\Tables_signal.s</FilePath>
+            </File>
+            <File>
+              <FileName>Tables_trigo.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\Tables_trigo.s</FilePath>
+            </File>
+            <File>
+              <FileName>Calcul_DFT_M2.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\Calcul_DFT_M2.s</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Drivers</GroupName>
+          <GroupName>Bibliotheque</GroupName>
           <Files>
             <File>
-              <FileName>gassp72.lib</FileName>
+              <FileName>gfssp72.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>..\GASSP72\GASSP72\gassp72.lib</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Sys</GroupName>
-          <Files>
-            <File>
-              <FileName>startup-rvds.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\startup-rvds.s</FilePath>
+              <FilePath>..\GFSSP72\gfssp72.lib</FilePath>
             </File>
           </Files>
         </Group>

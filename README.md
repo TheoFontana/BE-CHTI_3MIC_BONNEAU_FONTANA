@@ -35,6 +35,8 @@ Exemple de résultat obtenu
 ## Objectif 3 : Gestion du son
 Notre code se trouve dans le dossier [Objectif_3](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_3)
 ### Prérequis – Signal carré :
+Notre code se trouve dans le dossier [Objectif_3/Prerequis_Signal_carre](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_3/Prerequis_Signal_carre)
+
 Pour observer notre signal carré :
 
 * Dans le logic analyser, afficher la variable ```portb.1```, en bit (car nous modifions le bit n°1).

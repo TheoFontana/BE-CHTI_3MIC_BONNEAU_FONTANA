@@ -33,7 +33,6 @@ Exemple de résultat obtenu
 
 ![](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/blob/master/Screenshots/Objectif_2.png)
 ## Objectif 3 : Gestion du son
-Notre code se trouve dans le dossier [Objectif_3](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_3)
 ### Prérequis – Signal carré :
 Notre code se trouve dans le dossier [Objectif_3/Prerequis_Signal_carre](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_3/Prerequis_Signal_carre)
 
@@ -44,6 +43,7 @@ Pour observer notre signal carré :
 
 ![](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/blob/master/Screenshots/Objectif_3.1.png)
 ### Gestion du son :
+Notre code se trouve dans le dossier [Objectif_3](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_3)
 
 Pour observer notre spectre de son :
 * Dans le logic analyser, ajouter la variable ```TIM3_CCR3```, en variable analogique, sur une plage de 0 à 719. 

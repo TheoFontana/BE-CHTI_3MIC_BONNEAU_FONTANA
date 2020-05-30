@@ -7,7 +7,7 @@ Ce projet vise à mettre en place un jeu de tir laser sur cibles. À l’aide de
 
 ## Objectif 1 : Calcul de dft en simulation
 
-Notre code se trouve dans le dossier Objectif_1
+Notre code se trouve dans le dossier [Objectif_1](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_1)
 ### Partie 2.1 : Prérequis :
 Au niveau des tables de trigo, nous avons obtenu les valeurs :
 -	Min : 0x3FFF0001, en notation 2.30
@@ -23,7 +23,7 @@ Pour tester notre résultat :
 
 ## Objectif 2 : dft en temps réel et gestion des scores
 
-Notre code se trouve dans le dossier Objectif_2
+Notre code se trouve dans le dossier [Objectif_2](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_2)
 ### Pour tester notre programme :
 * Choisissez un scénario de test via la fonction Init_TimingADC_ActiveADC_ff() en jouant sur le paramètre Duree_Ech_ticks
 * Ajouter compteur_occurences[.] et scores[.] dans le logic analyser en tant que variables analogiques comprises respectivement entre 0 et 21, puis 0 et 10.
@@ -34,7 +34,7 @@ Exemple de résultat obtenu
 INSERER PHOTO
 
 ## Objectif 3 : Gestion du son
-Notre code se trouve dans le dossier RAJOUTER DOSSIER
+Notre code se trouve dans le dossier [Objectif_3](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_3)
 ### Prérequis – Signal carré :
 Pour observer notre signal carré :
 
@@ -62,7 +62,7 @@ La variable t1 affiche bien 91us.
 
 ## Objectif 4 : Projet final
 
-Notre code se trouve dans le dossier RAJOUTER DOSSIER
+Notre code se trouve dans le dossier [Objectif_4](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_4)
 
 Pour tester notre programme complet : 
 * Dans le logic analyser, afficher les variables présentées pour vérifier l’objectif 2 (compteur_occurences[.] et scores[.]), et l’objectif 3 (TIM3_CCR3). 

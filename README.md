@@ -31,8 +31,7 @@ Notre code se trouve dans le dossier [Objectif_2](https://github.com/TheoFontana
 
 Exemple de résultat obtenu
 
-INSERER PHOTO
-
+![](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/screenshots/Objectif_2.pnj)
 ## Objectif 3 : Gestion du son
 Notre code se trouve dans le dossier [Objectif_3](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_3)
 ### Prérequis – Signal carré :
@@ -41,16 +40,14 @@ Pour observer notre signal carré :
 * Dans le logic analyser, afficher la variable portb.1, en bit (car nous modifions le bit n°1).
 * Lancer le programme
 
-INSERER PHOTO
-
+[](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/screenshots/Objectif_3.1.pnj)
 ### Gestion du son :
 
 Pour observer notre spectre de son :
 * Dans le logic analyser, ajouter la variable TIM3_CCR3, en variable analogique, sur une plage de 0 à 719. 
 * Lancer le programme
 
-INSERER PHOTO
-
+[](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/screenshots/Objectif_3.2.pnj)
 Pour vérifier le temps entre deux échantillons : 
 
 * Mettre un point d’arrêt sur la ligne 22 du fichier son.s.
@@ -66,5 +63,7 @@ Notre code se trouve dans le dossier [Objectif_4](https://github.com/TheoFontana
 
 Pour tester notre programme complet : 
 * Dans le logic analyser, afficher les variables présentées pour vérifier l’objectif 2 (compteur_occurences[.] et scores[.]), et l’objectif 3 (TIM3_CCR3). 
+
+[](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/screenshots/Objectif_4.pnj)
 
 Le son se déclenche bien à chaque fois qu’un score est incrémenté. Nous avons pris un son court (N), pour remplacer le bruit de verre, afin d’éviter une surcharge visuelle.

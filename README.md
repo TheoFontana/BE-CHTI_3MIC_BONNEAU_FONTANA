@@ -25,8 +25,8 @@ Pour tester notre résultat :
 
 Notre code se trouve dans le dossier [Objectif_2](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_2)
 ### Pour tester notre programme :
-* Choisissez un scénario de test via la fonction Init_TimingADC_ActiveADC_ff() en jouant sur le paramètre Duree_Ech_ticks
-* Ajouter compteur_occurences[.] et scores[.] dans le logic analyser en tant que variables analogiques comprises respectivement entre 0 et 21, puis 0 et 10.
+* Choisissez un scénario de test via la fonction ```Init_TimingADC_ActiveADC_ff()``` en jouant sur le paramètre ```Duree_Ech_ticks```
+* Ajouter ```compteur_occurences[.]``` et ```scores[.]``` dans le logic analyser en tant que variables analogiques comprises respectivement entre 0 et 21, puis 0 et 10.
 * Lancer le programme et observer
 
 Exemple de résultat obtenu
@@ -37,14 +37,14 @@ Notre code se trouve dans le dossier [Objectif_3](https://github.com/TheoFontana
 ### Prérequis – Signal carré :
 Pour observer notre signal carré :
 
-* Dans le logic analyser, afficher la variable portb.1, en bit (car nous modifions le bit n°1).
+* Dans le logic analyser, afficher la variable ```portb.1```, en bit (car nous modifions le bit n°1).
 * Lancer le programme
 
 ![](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/blob/master/Screenshots/Objectif_3.1.png)
 ### Gestion du son :
 
 Pour observer notre spectre de son :
-* Dans le logic analyser, ajouter la variable TIM3_CCR3, en variable analogique, sur une plage de 0 à 719. 
+* Dans le logic analyser, ajouter la variable ```TIM3_CCR3```, en variable analogique, sur une plage de 0 à 719. 
 * Lancer le programme
 
 ![](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/blob/master/Screenshots/Objectif_3.2.png)
@@ -63,7 +63,7 @@ La variable t1 affiche bien 91us.
 Notre code se trouve dans le dossier [Objectif_4](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/Objetif_4)
 
 Pour tester notre programme complet : 
-* Dans le logic analyser, afficher les variables présentées pour vérifier l’objectif 2 (compteur_occurences[.] et scores[.]), et l’objectif 3 (TIM3_CCR3). 
+* Dans le logic analyser, afficher les variables présentées pour vérifier l’objectif 2 ( ```compteur_occurences[.]``` et ```scores[.]```), et l’objectif 3 : ```TIM3_CCR3```. 
 
 ![](https://github.com/TheoFontana/BE-CHTI_3MIC_BONNEAU_FONTANA/blob/master/Screenshots/Objectif_4.png)
 
